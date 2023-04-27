@@ -19,14 +19,15 @@ function displayPokemonOnPage() {
 
         pokemonContainer.appendChild(section);
         section.appendChild(sectionNode);
+
     }
 }
 
 
 //  ----- Previous & Next Pages -----
 function loadNextPage() {
-
-    Pokeservice.getNextPokemon(actualPage).then(pokemon => {//Next data from DB //Call for use datas from DB
+    //Next data from DB //Call for use datas from DB
+    PokeService.getNextPokemon(actualPage).then(pokemon => {
         actualPage = pokemon;
         console.log(actualPage);
         displayPokemonOnPage();
@@ -34,7 +35,7 @@ function loadNextPage() {
 }
 
 function loadPreviousPage() {
-    Pokeservice.getPreviousPokemon(actualPage)
+    PokeService.getPreviousPokemon(actualPage)
         .then(pokemonPage => {
             actualPage = pokemonPage;
             console.log(actualPage);

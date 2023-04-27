@@ -1,7 +1,20 @@
-body{
-    background-color: #3B4CCA;
-}
 
-.pokemon-container{
+body {
+    background-color: #3B4CCA;
+    
+}
+/* .sfondo-pokedex{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    max-height: 100vh;
+} */
+.pokemon-container {
     background-color: white;
+    padding: 20px;
+    flex-direction: column;
+    columns: 4;
+    justify-content: center;
+    max-width: max-content;
 }
