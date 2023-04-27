@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="loadPreviousPage()">Previous Page</button>
-    <button onclick="loadNextPage()">Next Page</button>
+    <div class="pokemon-container" id="pokemon-container"></div>
+
+    <div id="page-btn">
+        <button onclick="loadPreviousPage()">prev page</button>
+        <button onclick="loadNextPage()">next page</button>
+    </div>
+
 </body>
 <script src="./services/poke-service.js"></script>
 <script src="./app.js"></script>
